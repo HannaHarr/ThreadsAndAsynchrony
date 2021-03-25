@@ -21,9 +21,9 @@ namespace AsyncLibrary
 
         public static async Task FibAsync()
         {
-            var fib_5  = Task.Run(() => { return Fib(5); });
-            var fib_7 = Task.Run(() => { return Fib(7); });
-            var fib_11 = Task.Run(() => { return Fib(11); });
+            var fib_5 = Task.Run(() => Fib(5));
+            var fib_7 = Task.Run(() => Fib(7));
+            var fib_11 = Task.Run(() => Fib(11));
 
             Console.WriteLine($"Fibonacci number 5 - { await fib_5 }");
             Console.WriteLine($"Fibonacci number 7 - { await fib_7 }");
